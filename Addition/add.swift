@@ -9,11 +9,15 @@ import Foundation
 
 public class Addition {
 
-    public init(){
-        
+
+    public init() {
+        // public init
     }
 
+
+
     public func addTwoNumbers(a: Int, b: Int) -> Int {
+        print("addTwoNumbers called for \(a) and \(b)")
         return (a+b)
     }
 }
