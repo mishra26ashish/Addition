@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.platform = :ios
   spec.ios.deployment_target = '12.0'
   spec.name         = "Addition"
-  spec.version      = "0.0.7"
+  spec.version      = "0.0.8"
   spec.summary      = "it is a addition framework"
   spec.requires_arc = true
 
@@ -92,7 +92,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Addition/**/*"
+  spec.source_files  = "Addition/Files/*"
 
   # spec.public_header_files = "Classes/**/*.h"
 

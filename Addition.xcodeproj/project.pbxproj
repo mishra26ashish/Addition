@@ -48,11 +48,19 @@
 		1EE67E6B25E821C2008B2F8C /* Addition */ = {
 			isa = PBXGroup;
 			children = (
+				1EE67FA325E8500F008B2F8C /* Files */,
 				1EE67E6C25E821C2008B2F8C /* Addition.h */,
 				1EE67E6D25E821C2008B2F8C /* Info.plist */,
-				1EE67E7525E821DC008B2F8C /* add.swift */,
 			);
 			path = Addition;
+			sourceTree = "<group>";
+		};
+		1EE67FA325E8500F008B2F8C /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				1EE67E7525E821DC008B2F8C /* add.swift */,
+			);
+			path = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
