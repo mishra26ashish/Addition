@@ -9,6 +9,10 @@ import Foundation
 
 public class Addition {
 
+    public init(){
+        
+    }
+
     public func addTwoNumbers(a: Int, b: Int) -> Int {
         return (a+b)
     }
