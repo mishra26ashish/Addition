@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.platform = :ios
   spec.ios.deployment_target = '12.0'
   spec.name         = "Addition"
-  spec.version      = "0.0.8"
+  spec.version      = "0.0.10"
   spec.summary      = "it is a addition framework"
   spec.requires_arc = true
 
