@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.platform = :ios
   spec.ios.deployment_target = '12.0'
   spec.name         = "Addition"
-  spec.version      = "0.0.15"
+  spec.version      = "0.0.16"
   spec.summary      = "it is a addition framework"
   spec.requires_arc = true
 
@@ -92,7 +92,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = 'Addition/**/*.{h,m,swift}', 'Division/**/*.{h,m,swift}'
+  spec.source_files  = 'Addition/**/*.{h,m,swift}'
 
   spec.dependency 'Google-Mobile-Ads-SDK', '~> 7.69.0'
 
@@ -125,7 +125,10 @@ Pod::Spec.new do |spec|
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
   spec.swift_version = "5.0"
-
+  
+  spec.subspec 'Division' do |sp|
+    sp.source_files  = 'Division/**/*.{h,m,swift}'
+  end
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
