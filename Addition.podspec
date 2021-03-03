@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.platform = :ios
   spec.ios.deployment_target = '12.0'
   spec.name         = "Addition"
-  spec.version      = "0.0.16"
+  spec.version      = "0.0.17"
   spec.summary      = "it is a addition framework"
   spec.requires_arc = true
 
@@ -128,6 +128,10 @@ Pod::Spec.new do |spec|
   
   spec.subspec 'Division' do |sp|
     sp.source_files  = 'Division/**/*.{h,m,swift}'
+  end
+
+ spec.subspec 'common' do |sp|
+    sp.source_files  = 'common/**/*.{h,m,swift}'
   end
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

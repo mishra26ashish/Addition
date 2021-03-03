@@ -18,11 +18,17 @@ public class Addition {
 
     public func addTwoNumbers(a: Int, b: Int) -> Int {
         print("addTwoNumbers called for \(a) and \(b)")
-        return (a+b)
+        let c = (a+b)
+        let utils = utility()
+        utils.printTheseDataWithFrequency(data: "Ashish in addTwoNumbers function", freq: c)
+        return c
     }
 
     public func subtractTwoNumbers(a: Int, b: Int) -> Int {
         print("subtractTwoNumbers called for \(a) and \(b)")
-        return (a-b)
+        let c = (a-b)
+        let utils = utility()
+        utils.printTheseDataWithFrequency(data: "Ashish in subtractTwoNumbers function", freq: c)
+        return c
     }
 }

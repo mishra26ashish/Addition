@@ -8,3 +8,18 @@ target 'Addition' do
   # Pods for Addition
 
 end
+
+target 'Division' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  # Pods for Addition
+
+end
+
+
+target 'common' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  # Pods for Addition
+
+end
