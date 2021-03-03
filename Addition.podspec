@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.platform = :ios
   spec.ios.deployment_target = '12.0'
   spec.name         = "Addition"
-  spec.version      = "0.0.21"
+  spec.version      = "0.0.22"
   spec.summary      = "it is a addition framework"
   spec.requires_arc = true
 
@@ -125,7 +125,8 @@ Pod::Spec.new do |spec|
 
   spec.subspec 'Addition' do |sp|
     sp.source_files  = 'Addition/**/*.{h,m,swift}'
-    sp.dependency 'Google-Mobile-Ads-SDK', '~> 7.69.0','Addition/common'
+    sp.dependency 'Google-Mobile-Ads-SDK', '~> 7.69.0'
+    sp.dependency 'Addition/common'
   end  
 
   spec.subspec 'Division' do |sp|
