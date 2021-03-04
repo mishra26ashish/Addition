@@ -14,8 +14,10 @@ public class utility {
     }
 
    public func printTheseDataWithFrequency(data: String, freq: Int) {
-        while freq > 0 {
+    var count = freq
+        while count > 0 {
             print("printing data = \(data) with freq left = \(freq)")
+            count = count-1
         }
     }
 
