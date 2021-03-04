@@ -15,6 +15,9 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
+  spec.platform = :ios
+  spec.ios.deployment_target = '12.0'
+
   spec.name         = "Division"
   spec.version      = "0.0.4"
   spec.summary      = "A short description of Division blaaaaadsfasdfadsfdasfasffasdfafas."
@@ -25,7 +28,7 @@ Pod::Spec.new do |spec|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "vbbbbc,dsmncssdnflkdfklfhbvakjbgvksbvkahgfabfvajkhfawihgbasbvjasgsavba"
+  spec.description  = "vbbbbcdsmncssdnflkdfklfhbvakjbgvksbvkahgfabfvajkhfawihgbasbvjasgsavba"
 
   spec.homepage     = "https://github.com/mishra26ashish/Addition"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -93,7 +96,6 @@ Pod::Spec.new do |spec|
 
   spec.source_files  = "Classes", "Division/**/*.{h,m,swift}"
   spec.exclude_files = "Classes/Exclude"
-  spec.vendored_frameworks = 'Products/Division.framework'
 
   spec.swift_version = "5.0"
   
