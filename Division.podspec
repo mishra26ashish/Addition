@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "Division"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "A short description of Division blaaaaadsfasdfadsfdasfasffasdfafas."
   spec.requires_arc = true
 
@@ -79,7 +79,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/mishra26ashish/Addition.git", :tag => "{spec.name}-#{spec.version}" }
+  spec.source       = { :git => "https://github.com/mishra26ashish/Addition.git", :tag => "#{spec.name}-#{spec.version}" }
 
 
 
