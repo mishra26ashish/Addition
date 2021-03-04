@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "commonn"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "A commonn framework for common use"
   spec.requires_arc = true
 
