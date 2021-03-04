@@ -5,6 +5,7 @@ target 'Addition' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'Google-Mobile-Ads-SDK'
+  pod 'common' , :source => 'https://github.com/mishra26ashish/AdditionPodSpecs.git'
   # Pods for Addition
 
 end
@@ -12,6 +13,7 @@ end
 target 'Division' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  pod 'common' , :source => 'https://github.com/mishra26ashish/AdditionPodSpecs.git'
   # Pods for Addition
 
 end

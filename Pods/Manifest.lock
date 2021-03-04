@@ -1,4 +1,5 @@
 PODS:
+  - common (0.0.1)
   - Google-Mobile-Ads-SDK (7.69.0):
     - GoogleAppMeasurement (~> 7.0)
     - GoogleUserMessagingPlatform (~> 1.1)
@@ -34,9 +35,12 @@ PODS:
   - PromisesObjC (1.2.12)
 
 DEPENDENCIES:
+  - common
   - Google-Mobile-Ads-SDK
 
 SPEC REPOS:
+  https://github.com/mishra26ashish/AdditionPodSpecs.git:
+    - common
   trunk:
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
@@ -46,6 +50,7 @@ SPEC REPOS:
     - PromisesObjC
 
 SPEC CHECKSUMS:
+  common: 9f765640ce311a6f76f98e0560bd220321c21cb4
   Google-Mobile-Ads-SDK: 2f288748a42920d1c744946a460896a95b0e9110
   GoogleAppMeasurement: 65a1071e5f52f63ab03d0a4d814a54fd762d885a
   GoogleUserMessagingPlatform: b168e8c46cd8f92aa3e34b584c4ca78a411ce367
@@ -53,6 +58,6 @@ SPEC CHECKSUMS:
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
 
-PODFILE CHECKSUM: e2e36edd80acb15bff5a5ea1f1b6fd30a9b67eb4
+PODFILE CHECKSUM: 819110c2e5cfe1735a01a8356f112d4548afb7d8
 
 COCOAPODS: 1.10.1
