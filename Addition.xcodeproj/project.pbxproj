@@ -10,6 +10,7 @@
 		1EA357C525ED151200ACCE9C /* Division.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EA357C325ED151200ACCE9C /* Division.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1EA357CD25ED155D00ACCE9C /* Divide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA357CC25ED155D00ACCE9C /* Divide.swift */; };
 		1EA359BD25F0FDC500ACCE9C /* commonn.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EA359BB25F0FDC500ACCE9C /* commonn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EA359E425F1028A00ACCE9C /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA359E325F1028A00ACCE9C /* utils.swift */; };
 		1EE67E6E25E821C2008B2F8C /* Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EE67E6C25E821C2008B2F8C /* Addition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1EE67E7625E821DC008B2F8C /* add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE67E7525E821DC008B2F8C /* add.swift */; };
 		51B0B4624F4DFD6C26A0388E /* Pods_Addition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BFEE5C35730B88DBDFFBDC2 /* Pods_Addition.framework */; };
@@ -23,10 +24,10 @@
 		1EA357C325ED151200ACCE9C /* Division.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Division.h; sourceTree = "<group>"; };
 		1EA357C425ED151200ACCE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EA357CC25ED155D00ACCE9C /* Divide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divide.swift; sourceTree = "<group>"; };
-		1EA358B325EFA2DA00ACCE9C /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		1EA359B925F0FDC500ACCE9C /* commonn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = commonn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EA359BB25F0FDC500ACCE9C /* commonn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = commonn.h; sourceTree = "<group>"; };
 		1EA359BC25F0FDC500ACCE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EA359E325F1028A00ACCE9C /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
 		1EE67E6925E821C2008B2F8C /* Addition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Addition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EE67E6C25E821C2008B2F8C /* Addition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Addition.h; sourceTree = "<group>"; };
 		1EE67E6D25E821C2008B2F8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,22 +96,22 @@
 			path = Files;
 			sourceTree = "<group>";
 		};
-		1EA358B225EFA2C300ACCE9C /* Files */ = {
-			isa = PBXGroup;
-			children = (
-				1EA358B325EFA2DA00ACCE9C /* Utility.swift */,
-			);
-			path = Files;
-			sourceTree = "<group>";
-		};
 		1EA359BA25F0FDC500ACCE9C /* commonn */ = {
 			isa = PBXGroup;
 			children = (
-				1EA358B225EFA2C300ACCE9C /* Files */,
+				1EA359E225F1027800ACCE9C /* Files */,
 				1EA359BB25F0FDC500ACCE9C /* commonn.h */,
 				1EA359BC25F0FDC500ACCE9C /* Info.plist */,
 			);
 			path = commonn;
+			sourceTree = "<group>";
+		};
+		1EA359E225F1027800ACCE9C /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				1EA359E325F1028A00ACCE9C /* utils.swift */,
+			);
+			path = Files;
 			sourceTree = "<group>";
 		};
 		1EE67E5F25E821C2008B2F8C = {
@@ -266,6 +267,7 @@
 					};
 					1EA359B825F0FDC500ACCE9C = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					1EE67E6825E821C2008B2F8C = {
 						CreatedOnToolsVersion = 12.2;
@@ -377,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EA359E425F1028A00ACCE9C /* utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +450,7 @@
 		1EA359BF25F0FDC500ACCE9C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Y64D9DA984;
@@ -463,6 +467,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mishra.commonn;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -471,6 +476,7 @@
 		1EA359C025F0FDC500ACCE9C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Y64D9DA984;

@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '12.0'
 
   spec.name         = "Division"
-  spec.version      = "0.0.7"
+  spec.version      = "0.0.8"
   spec.summary      = "it is a Division framework"
   spec.requires_arc = true
 

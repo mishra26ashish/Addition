@@ -1,12 +1,11 @@
 //
-//  Utility.swift
+//  utils.swift
 //  commonn
 //
-//  Created by B0212150 on 03/03/21.
+//  Created by B0212150 on 04/03/21.
 //
 
 import Foundation
-
 
 public class utility {
 

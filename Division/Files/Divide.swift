@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import commonn
 
 public class Division {
 
@@ -16,8 +17,8 @@ public class Division {
     public func divide(a: Int, b: Int) -> Int {
         print("divide func of Division framework called for \(a) and \(b)")
         let c = a/b
-//        let utils = utility()
-//        utils.printTheseDataWithFrequency(data: "Ashish in divide function", freq: c)
+        let utils = utility()
+        utils.printTheseDataWithFrequency(data: "Ashish in divide function", freq: c)
         return c
     }
 }
