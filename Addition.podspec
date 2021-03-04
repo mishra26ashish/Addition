@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.platform = :ios
   spec.ios.deployment_target = '12.0'
   spec.name         = "Addition"
-  spec.version      = "0.0.23"
+  spec.version      = "0.0.24"
   spec.summary      = "it is a addition framework"
   spec.requires_arc = true
 
@@ -81,7 +81,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/mishra26ashish/Addition.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/mishra26ashish/Addition.git", :tag => "#{spec.name}-#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -123,20 +123,9 @@ Pod::Spec.new do |spec|
   spec.swift_version = "5.0"
 
 
-  spec.subspec 'Addition' do |sp|
-    sp.source_files  = 'Addition/**/*.{h,m,swift}'
-    sp.dependency 'Google-Mobile-Ads-SDK', '~> 7.69.0'
-    sp.dependency 'Addition/common'
-  end  
+  spec.source_files  = 'Addition/**/*.{h,m,swift}'
+  sp.dependency 'Google-Mobile-Ads-SDK', '~> 7.69.0'
 
-  spec.subspec 'Division' do |sp|
-    sp.source_files  = 'Division/**/*.{h,m,swift}'
-    sp.dependency  'Addition/common'
-  end
-
- spec.subspec 'common' do |sp|
-    sp.source_files  = 'common/**/*.{h,m,swift}'
-  end
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
