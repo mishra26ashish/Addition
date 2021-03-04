@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "Division"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "A short description of Division blaaaaadsfasdfadsfdasfasffasdfafas."
   spec.requires_arc = true
 
@@ -93,7 +93,7 @@ Pod::Spec.new do |spec|
 
   spec.source_files  = "Classes", "Division/**/*.{h,m,swift}"
   spec.exclude_files = "Classes/Exclude"
-  Spec.vendored_frameworks = 'Products/Division.framework'
+  spec.vendored_frameworks = 'Products/Division.framework'
 
   spec.swift_version = "5.0"
   
