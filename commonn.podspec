@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "commonn"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "A commonn framework for common use"
   spec.requires_arc = true
 
@@ -93,9 +93,11 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "commonn/**/*.{h,m,swift}"
+  #spec.source_files  = "Classes", "commonn/**/*.{h,m,swift}"
   spec.exclude_files = "Classes/Exclude"
   spec.swift_version = "5.0"
+
+  spec.vendored_frameworks = 'Frameworks/commonn.framework'
 
   # spec.public_header_files = "Classes/**/*.h"
 

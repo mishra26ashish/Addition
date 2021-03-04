@@ -1,0 +1,11 @@
+framework module commonn {
+  umbrella header "commonn.h"
+
+  export *
+  module * { export * }
+}
+
+module commonn.Swift {
+    header "commonn-Swift.h"
+    requires objc
+}
