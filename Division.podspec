@@ -19,8 +19,8 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '12.0'
 
   spec.name         = "Division"
-  spec.version      = "0.0.6"
-  spec.summary      = "A short description of Division blaaaaadsfasdfadsfdasfasffasdfafas."
+  spec.version      = "0.0.7"
+  spec.summary      = "it is a Division framework"
   spec.requires_arc = true
 
   # This description is used to generate tags and improve search results.
