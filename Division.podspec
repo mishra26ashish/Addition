@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '12.0'
 
   spec.name         = "Division"
-  spec.version      = "0.0.8"
+  spec.version      = "0.0.9"
   spec.summary      = "it is a Division framework"
   spec.requires_arc = true
 
@@ -99,7 +99,7 @@ Pod::Spec.new do |spec|
 
   spec.swift_version = "5.0"
   
-  spec.dependency 'commonn', '~> 0.0.1'
+  spec.dependency 'commonn', '~> 0.0.2'
   
 
   # spec.public_header_files = "Classes/**/*.h"
