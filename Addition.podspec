@@ -124,7 +124,7 @@ Pod::Spec.new do |spec|
 
 
   spec.source_files  = 'Addition/**/*.{h,m,swift}'
-  sp.dependency 'Google-Mobile-Ads-SDK', '~> 7.69.0'
+  spec.dependency 'Google-Mobile-Ads-SDK', '~> 7.69.0'
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
