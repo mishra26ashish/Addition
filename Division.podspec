@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '12.0'
 
   spec.name         = "Division"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.6"
   spec.summary      = "A short description of Division blaaaaadsfasdfadsfdasfasffasdfafas."
   spec.requires_arc = true
 
@@ -98,6 +98,8 @@ Pod::Spec.new do |spec|
   spec.exclude_files = "Classes/Exclude"
 
   spec.swift_version = "5.0"
+  
+  spec.dependency 'commonn', '~> 0.0.1'
   
 
   # spec.public_header_files = "Classes/**/*.h"
