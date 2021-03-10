@@ -1,0 +1,11 @@
+framework module Division {
+  umbrella header "Division.h"
+
+  export *
+  module * { export * }
+}
+
+module Division.Swift {
+    header "Division-Swift.h"
+    requires objc
+}

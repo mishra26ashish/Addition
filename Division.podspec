@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '12.0'
 
   spec.name         = "Division"
-  spec.version      = "0.0.9"
+  spec.version      = "0.0.10"
   spec.summary      = "it is a Division framework"
   spec.requires_arc = true
 
@@ -94,13 +94,18 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Division/**/*.{h,m,swift}"
+  #spec.source_files  = "Classes", "Division/**/*.{h,m,swift}"
   spec.exclude_files = "Classes/Exclude"
 
   spec.swift_version = "5.0"
   
-  spec.dependency 'commonn', '~> 0.0.2'
-  
+  spec.dependency 'commonn', '~> 0.0.5'
+ 
+  spec.vendored_frameworks = 'Frameworks/Division.framework'
+
+  spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+ 
 
   # spec.public_header_files = "Classes/**/*.h"
 
