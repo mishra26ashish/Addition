@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "commonn"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "A commonn framework for common use"
   spec.requires_arc = true
 
@@ -98,6 +98,8 @@ Pod::Spec.new do |spec|
   spec.swift_version = "5.0"
 
   spec.vendored_frameworks = 'Frameworks/commonn.framework'
+spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   # spec.public_header_files = "Classes/**/*.h"
 
